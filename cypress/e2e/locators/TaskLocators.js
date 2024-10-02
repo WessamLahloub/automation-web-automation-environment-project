@@ -22,5 +22,19 @@ export default {
   //Login Locators
   EMAIL_LOGIN: 'input[name="email"]',
   PASSWORD_LOGIN: 'input[name="password"]',
-  LOGIN_BUTTON: '#loginBtn'
+  LOGIN_BUTTON: '#loginBtn',
+
+  //Validations
+  EMAIL_VALIDATION: '#err-email',
+
+  //Search Job
+  SEARCH_JOBS_TAB: '.tab3',
+  SEARCH_JOBS_FIELD: '.keword-filter',
+  FIND_JOBS_BUTTON: '.find-jobs--btn',
+  CARD_JOB_NAME: '.job-card-top-info',
+
+  //Logout Locators
+  PROFILE_INFO: '#auth-container',
+  LOGOUT_BUTTON: 'a[href="/app/control/byt_reg_manager?byt_reg_stage=6"]',
+  LOGOUT_MESSAGE: '#content'
 }
