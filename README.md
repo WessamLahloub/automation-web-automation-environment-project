@@ -21,7 +21,7 @@ To set up the project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone [https://github.com/WessamLahloub/QAProsWebAutomation]
+   git clone https://github.com/WessamLahloub/QAProsWebAutomation
    cd your-repo
 2. Install Dependencies: Make sure you have Node.js and npm installed. Then run the following command to install the required dependencies which should automatically install all needed tools 
    
