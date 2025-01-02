@@ -4,6 +4,14 @@
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^21.0.0",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.32.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "scripts": {
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report",
+    "test:allure": "cypress run && npm run allure:generate && npm run allure:open"
   }
 }

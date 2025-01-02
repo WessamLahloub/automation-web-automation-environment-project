@@ -1,40 +1,45 @@
 
 export default {
 
+  //Main page items locators
+  BOOKS_GENERAL_LOCATORS: "ul.products",
+  BOOK_PRICE: ".price",
+  ADD_TO_BASKET_BTN: ".add_to_cart_button",
 
-  //Register Locators
-  FIRST_NAME: 'input[name="first_name"]',
-  FIRST_NAME_AR: 'input[name="first_name_ar"]',
-  LAST_NAME: 'input[name="last_name"]',
-  LAST_NAME_AR: 'input[name="last_name_ar"]',
-  EMAIL_REGISTER: "#registerEmailField",
-  PASSWORD_REGISTER: 'input[name="password"]',
-  BIRTH_DATE_DAY: "#id-birthdate_day",
-  BIRTH_DATE_MONTH: "#id-birthdate_month",
-  BIRTH_DATE_YEAR: "#id-birthdate_year",
-  MOBILE_PHONE: ".phone_intl_input",
-  STUDENT_ID_NUMBER: 'input[name="gen_field_1"]',
-  COMMUNICATION_METHODE: '.select2-selection__rendered',
-  TERMS: ".checkbox",
-  CREATE_ACCOUNT: ".large",
+  //Basket icon locators
+  BASKET_ICON: "#wpmenucartli",
+  EXTERNAL_BASKET_ICON_ITEMS: ".cartcontents",
+  EXTERNAL_BASKET_ICON_AMOUT: ".amount",
+  MENU_ICON: "#menu-icon",
+
+  //Basket details locators
+  PRODUCT_NAME: ".product-name",
+  PRODUCT_PRICE: ".product-price",
+  PRODUCT_QUANTITY: ".product-quantity",
+  PRODUCT_TOTAL: ".product-subtotal",
+
+  //Basket totals locators
+  BASKET_TOTALS_SUBTOTAL: "tr.cart-subtotal",
+  BASKET_TOTALS_TAX: "tr.tax-rate",
+  BASKET_TOTALS_TOTAL: "tr.order-total",
+
+  //Checkout button locator
+  PROCEED_TO_CHECKOUT_BTN: ".checkout-button",
+
+  //Billing details form locators
+  BILLING_DETAILS_FORM_TITLE: ".woocommerce-billing-fields",
+  FIRST_NAME: "#billing_first_name_field",
+  LAST_NAME: "#billing_last_name_field",
+  COMPANY_NAME: "#billing_company_field",
+  EMAIL_ADDRESS: "#billing_email_field",
+  PHONE_NUMBER: "#billing_phone_field",
+  COUNTRY: "#billing_country_field",
+  ADDRESS: "#billing_address_1_field",
+  CITY: "#billing_city_field",
+  STATE: "#billing_state_field",
+  POSTAL_CODE: "#billing_postcode_field",
 
 
-  //Login Locators
-  EMAIL_LOGIN: 'input[name="email"]',
-  PASSWORD_LOGIN: 'input[name="password"]',
-  LOGIN_BUTTON: '#loginBtn',
 
-  //Validations
-  EMAIL_VALIDATION: '#err-email',
 
-  //Search Job
-  SEARCH_JOBS_TAB: '.tab3',
-  SEARCH_JOBS_FIELD: '.keword-filter',
-  FIND_JOBS_BUTTON: '.find-jobs--btn',
-  CARD_JOB_NAME: '.job-card-top-info',
-
-  //Logout Locators
-  PROFILE_INFO: '#auth-container',
-  LOGOUT_BUTTON: 'a[href="/app/control/byt_reg_manager?byt_reg_stage=6"]',
-  LOGOUT_MESSAGE: '#content'
 }

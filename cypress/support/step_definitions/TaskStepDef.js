@@ -2,53 +2,38 @@ const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor")
 import TaskPO from "../../e2e/pageobjects/TaskPO";
 
 //User Creates a new account as a Job seeker
-Given("user navigate to talentera register page", () => {
-  TaskPO.NavigateRegister();
+Given("navigate to practice automation website", () => {
+  TaskPO.NavigateWebsite();
 });
 
-When("user fill all required fields", () => {
-  TaskPO.fillAllRequiredFields();
+Then("Assert {string} book exist and has a price of {string}", (expectedBookName, expectedBookPrice) => {
+  TaskPO.AssertCardExists(expectedBookName, expectedBookPrice);
 });
 
-Then("Assert success message", () => {
-  TaskPO.AssertSuccessRegister();
-})
+When("click on Add to basket for {string} book", (expectedBookName) => {
+  TaskPO.clickOnNeededBook(expectedBookName);
+});
 
-//User Sign in with valid cridintials
-Given("user navigate to login page", () => {
-  TaskPO.Navigatelogin();
-})
+When("click on Basket icon that has {string} which should cost {string}", (numberOfItems, PriceOfItems) => {
+  TaskPO.clickBasketIcon(numberOfItems, PriceOfItems);
+});
 
-When("user enters valid cridintials", () => {
-  TaskPO.EnterLoginCrids();
-})
+Then("Assert added product name is {string} with quantity of {string} for the price of {string} and a total of {string}", (itemName, quantity, price, total) => {
+  TaskPO.AssertBasketDetails(itemName, quantity, price, total);
+});
 
-Then("user should get logged in", () => {
-  TaskPO.AssertSuccessLogin();
-})
+Then("The Basket Total should be {string} with a tax of {string} and a total of {string}", (subTotal, tax, total) => {
+  TaskPO.AssertBasketTotal(subTotal, tax, total);
+});
 
-//User Should be able to search for a job
-Given("user naviagte to Search Jobs tab", () => {
-  TaskPO.NavigateSearchJob();
-})
+Then("click on proceed checkout button", () => {
+  TaskPO.clickProceedToCheckout();
+});
 
-When("user search for certain job", () => {
-  TaskPO.SearchJob()
-})
+Then("form with title {string} should be displayed", (expectedTitle) => {
+  TaskPO.AssertBillingDetailsForm(expectedTitle);
+});
 
-Then("only jobs containins the same name should appear", ()=> {
-  TaskPO.AssertJobSearch();
-})
-
-//user logout
-
-When("user logout from account", ()=> {
-  TaskPO.LogoutButton();
-})
-
-Then("assert logout success", () => {
-  TaskPO.AssertSuccessLogout();
-})
 
 
 

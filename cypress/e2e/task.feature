@@ -1,29 +1,32 @@
-Feature: Bayt Task
 
-  Scenario: User Creates a new account as a Job seeker
-    Given user navigate to talentera register page
-    When user fill all required fields
-    Then Assert success message
+@feature:Login
+@severity:critical
+@feature:PracticeAutomationTask
 
-  Scenario: User Sign in with valid cridintials
-    Given user navigate to login page
-    When user enters valid cridintials
-    Then user should get logged in
+Feature: Practice Automation Task
 
-  Scenario: User Should be able to search for a job
-    # Power of cocumber is shown here, i can use the same implementation for logging in 
-    # instead of making a duplicate one each time
-    Given user navigate to login page
-    When user enters valid cridintials
-    Given user naviagte to Search Jobs tab
-    When user search for certain job
-    Then only jobs containins the same name should appear
+  Background:
+    Given navigate to practice automation website
 
-  Scenario: user logout
-    Given user navigate to login page
-    When user enters valid cridintials
-    When user logout from account
-    Then assert logout success
+  Scenario: navigate to practice automation and Assert Thinking in HTML book exist along with its price
+    Then Assert "Thinking in HTML" book exist and has a price of "₹400.00"
+
+  Scenario: Click on Add to Basket for Thinking in HTML book and Assert the data for item added to the cart
+    When click on Add to basket for "Thinking in HTML" book
+    And click on Basket icon that has "1 item" which should cost "₹400.00"
+    Then Assert added product name is "Thinking in HTML" with quantity of "1" for the price of "₹400.00" and a total of "₹400.00"
+    And The Basket Total should be "₹400.00" with a tax of "₹8.00" and a total of "₹408.00"
+    And click on proceed checkout button
+
+    Scenario: Navigate to Billing Details page and assert form displayed
+    When click on Add to basket for "Thinking in HTML" book
+    And click on Basket icon that has "1 item" which should cost "₹400.00"
+    And click on proceed checkout button
+    Then form with title "Billing Details" should be displayed
+
+
+
+
 
 
 
