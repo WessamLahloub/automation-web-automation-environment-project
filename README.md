@@ -37,6 +37,20 @@ These will be installed as part of the npm install command, provided they are li
 
 4. Running Tests
    
-***To open the Cypress Test Runner, use the following command:***
+***To open the Cypress Test Runner and see the test execution(headed), use the following command:***
 
+ ```bash
 npx cypress open
+
+***To open the Cypress Test Runner in headless mode, use the following command:***
+
+ ```bash
+npx cypress run
+
+***To open the Allure report to see the testcases status, run the following commands:***
+
+ ```bash
+npm run browser:chrome      //To run the test and generate the data in allure-results file
+npm run report:allure       //to view the allure report file
+
+
