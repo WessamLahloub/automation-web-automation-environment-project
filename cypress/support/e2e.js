@@ -16,6 +16,13 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import '@shelex/cypress-allure-plugin';
-
-
 // require('./commands')
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from failing the test
+    if (err.message.includes("Cannot read properties of undefined (reading 'setLocaleData')")) {
+      return false;
+    }
+    // still let other exceptions fail the test
+    return true;
+  });

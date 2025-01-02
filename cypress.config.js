@@ -14,9 +14,7 @@ module.exports = defineConfig({
       allureWriter(on, config); // Allure writer to generate results
       return config;
     },
-    specPattern: 'cypress/e2e/**/*.feature', // Path for your feature files
-    env: {
-      allureResultsPath: 'allure-results', // Specify the results directory
-    },
+    specPattern: 'cypress/e2e/**/*.feature', // Path for the feature files
+    video: true, // Enable video recording for testcases
   },
 });

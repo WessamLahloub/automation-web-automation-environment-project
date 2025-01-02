@@ -1,8 +1,4 @@
 
-@feature:Login
-@severity:critical
-@feature:PracticeAutomationTask
-
 Feature: Practice Automation Task
 
   Background:
