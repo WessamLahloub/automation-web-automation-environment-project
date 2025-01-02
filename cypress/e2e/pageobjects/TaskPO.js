@@ -104,14 +104,6 @@ function AssertBillingDetailsForm(expectedTitle) {
 }
 
 
-
-
-
-
-
-
-
-
 export default {
   NavigateWebsite,
   AssertCardExists,
