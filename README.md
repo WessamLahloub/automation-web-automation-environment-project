@@ -1,4 +1,7 @@
 # Automation Cypress Project Complete Environment based on javascript with Cucumber and Page Object Model (POM), Integrated with allure and has a parallel test method, also is a Dockerised project
+
+# Note: This environment is carefully crafted by Wesam with passionate love for automation and will always be updated to follow PERFECT practices in Cypress. Every function here is optimized to execute flawlessly within 5-6 seconds, complete with a beautifully generated Allure report to showcase the magic.
+
 ## Overview
 
 This project uses **Cypress** for end-to-end testing and incorporates **Cucumber** to implement Behavior-Driven Development (BDD). The **Page Object Model (POM)** design pattern is employed to create a structured and maintainable approach for writing test scripts.
