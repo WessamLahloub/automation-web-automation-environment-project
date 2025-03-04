@@ -2,7 +2,7 @@
 
 <span style="color:red">
 
-**Note:** This environment is carefully crafted by Wesam with passionate love for automation and will always be updated to follow *PERFECT* practices in Cypress. Every function here is optimized to execute flawlessly within **5-6 seconds**, complete with a beautifully generated Allure report to showcase the magic.
+**Note:** This environment is carefully crafted by Wesam with passionate love for automation and will always be updated to follow *PERFECT* practices in Cypress. Every function here is optimized to execute flawlessly, All function should complete execution within **5-6 seconds**, with a beautifully generated Allure report to showcase the magic.
 
 </span>
 
