@@ -30,8 +30,8 @@ To set up the project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/WessamLahloub/qa-pros-web-automation-project
-   cd qa-pros-web-automation-project
+   git clone https://github.com/WessamLahloub/automation-web-automation-environment-project
+   cd automation-web-automation-environment-project
    ```
 
 2. **Install Dependencies**:
