@@ -1,4 +1,4 @@
-# QA Pros Cypress Project based on javascript with Cucumber and Page Object Model (POM), Integrated with allure and has a parallel test method, also is a dockerised project
+# Automation Cypress Project based on javascript with Cucumber and Page Object Model (POM), Integrated with allure and has a parallel test method, also is a Dockerised project
 ## Overview
 
 This project uses **Cypress** for end-to-end testing and incorporates **Cucumber** to implement Behavior-Driven Development (BDD). The **Page Object Model (POM)** design pattern is employed to create a structured and maintainable approach for writing test scripts.
